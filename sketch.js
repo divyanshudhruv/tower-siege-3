@@ -3,18 +3,18 @@ const World= Matter.World;
 const Bodies = Matter.Bodies;
 const Constraint = Matter.Constraint;
 
-var engine, world;
-var ground , base1, base2;
-var box1, box2, box3, box4, box5, box6, box7, box8, box9, box10;
-var polygon, launcher ;
-var score=0
+let engine, world;
+let ground , base1, base2;
+let box1, box2, box3, box4, box5, box6, box7, box8, box9, box10;
+let polygon, launcher ;
+let score=0
 
 function preload() {
   
 }
 
 function setup(){
-    var canvas = createCanvas(1200,400);
+    let canvas = createCanvas(1200,400);
     engine = Engine.create();
     world = engine.world;
 
