@@ -1,6 +1,6 @@
 class Launcher{
     constructor(bodyA, pointB){
-        var options = {
+        let options = {
             bodyA: bodyA,
             pointB: pointB,
             stiffness: 0.04,
@@ -22,8 +22,8 @@ class Launcher{
     display(){
         push()
         if (this.launcher.bodyA){
-        var pointA = this.launcher.bodyA.position;
-        var pointB = this.pointB ;
+        let pointA = this.launcher.bodyA.position;
+        let pointB = this.pointB ;
         strokeWeight(4);
         stroke("cyan")
         line(pointA.x, pointA.y, pointB.x, pointB.y);
